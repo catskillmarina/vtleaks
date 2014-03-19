@@ -5,7 +5,7 @@
     <title>{{ page.title }}</title>
     <meta http-equiv="Content-Language" content="English" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}css/style.css" media="screen" />
 </head>
 
 <body>
@@ -31,19 +31,21 @@
     <div class="left">
 		
         <h2>Navigation</h2>
-
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="{{ site.url }}index.html">Home</a>
             </li>
             <li>
-                <a href="finances.html">Finances</a>
+                <a href="{{ site.url }}news.html">News</a>
             </li>
             <li>
-               <a href="submission-guidelines.html">Submission Guidelines</a>
+                <a href="{{ site.url }}finances.html">Finances</a>
             </li>
             <li>
-                <a href="website.html">Website Development</a>
+               <a href="{{ site.url }}submission-guidelines.html">Submission Guidelines</a>
+            </li>
+            <li>
+                <a href="{{ site.url }}website.html">Website Development</a>
             </li>
         </ul>
 		
@@ -52,6 +54,9 @@
 
     <div class="middle">
 			
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
 	{{ content }}		
         <br /><br />
     </div>

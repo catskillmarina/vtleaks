@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 source:      ./
 destination: ../public_html
+url: http://localhost:4000/
