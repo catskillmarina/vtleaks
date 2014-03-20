@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: new-default
 title:  "Site using jekyll templates"
 date:   2014-03-18 21:38:56
 categories: VTLeaks news

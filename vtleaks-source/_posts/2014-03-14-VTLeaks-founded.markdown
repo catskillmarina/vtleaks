@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: new-default
 title:  "VTLeaks!"
 date:   2014-03-10 21:38:56
 categories: VTLeaks news
