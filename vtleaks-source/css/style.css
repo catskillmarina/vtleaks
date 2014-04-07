@@ -53,6 +53,7 @@ background: #85ACF7 url('{{ site.url }}/css/images/hidr.jpg');
 .header h1 { padding-left: 17px; padding-top: 22px; font-size: 22px; color: #FFF; }
 .header h1 a { font-size: 22px; color: #FFF; text-decoration: none;}
 .header h2 { padding-left: 17px; padding-top: 0px; font-size: 17px; color: #FFF; }
+.header h3 { color: #3B6EBF; font-size: 12px; margin-bottom: 10px; margin-top: 10px;}
 
 .breadcrumbs { 
     background: #F6F9FB; 
@@ -89,6 +90,7 @@ background: #85ACF7 url('{{ site.url }}/css/images/hidr.jpg');
 }
 
 .middle h2 { color: #3B6EBF; font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
+.middle h3 { color: #3B6EBF; font-size: 14px; margin-bottom: 4px; margin-top: 6px;}
 .left h2 { color: #3B6EBF; font-size: 14px; margin-top: 15px;}
 
 
