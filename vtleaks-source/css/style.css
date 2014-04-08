@@ -91,6 +91,25 @@ background: #85ACF7 url('{{ site.url }}/css/images/hidr.jpg');
 
 .middle h2 { color: #3B6EBF; font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
 .middle h3 { color: #3B6EBF; font-size: 14px; margin-bottom: 4px; margin-top: 6px;}
+
+.middle ul {
+	padding: 20px 0 15px 20px;
+	margin:0;
+}
+
+.middle li {
+	margin-bottom:5px;
+	list-style-type: circle;
+	color: #3B6EBF;
+}
+.middle hr {
+	border: 0;
+	width: 99%;
+	color: #3B6EBF;
+	background-color: #2B4EBF;
+	height: 1px;
+}
+
 .left h2 { color: #3B6EBF; font-size: 14px; margin-top: 15px;}
 
 

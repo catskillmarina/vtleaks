@@ -21,12 +21,12 @@ a:hover {
 #wrap {
 margin: 20px auto;
 width: 724px;
-background: #fff url('http://localhost:4000//css/images/midd.jpg');
+background: #fff url('http://vtleaks.org//css/images/midd.jpg');
 background-repeat: repeat-y;
 }
 
 #top { 
-background: #fff url('http://localhost:4000//css/images/topp.jpg');
+background: #fff url('http://vtleaks.org//css/images/topp.jpg');
 height: 26px;
 }
 
@@ -36,14 +36,14 @@ padding: 0 40px 0 40px;
 
 #bottom {
 
-background: #fff url('http://localhost:4000//css/images/bott.jpg');
+background: #fff url('http://vtleaks.org//css/images/bott.jpg');
 height: 20px;
 }
 
 
 .header {
 height: 100px;
-background: #85ACF7 url('http://localhost:4000//css/images/hidr.jpg');
+background: #85ACF7 url('http://vtleaks.org//css/images/hidr.jpg');
 }
 
 .header h1 { padding-left: 17px; padding-top: 22px; font-size: 22px; color: #FFF; }
@@ -87,6 +87,25 @@ background: #85ACF7 url('http://localhost:4000//css/images/hidr.jpg');
 
 .middle h2 { color: #3B6EBF; font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
 .middle h3 { color: #3B6EBF; font-size: 14px; margin-bottom: 4px; margin-top: 6px;}
+
+.middle ul {
+	padding: 20px 0 15px 20px;
+	margin:0;
+}
+
+.middle li {
+	margin-bottom:5px;
+	list-style-type: circle;
+	color: #3B6EBF;
+}
+.middle hr {
+	border: 0;
+	width: 99%;
+	color: #3B6EBF;
+	background-color: #2B4EBF;
+	height: 1px;
+}
+
 .left h2 { color: #3B6EBF; font-size: 14px; margin-top: 15px;}
 
 
