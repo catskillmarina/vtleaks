@@ -1,0 +1,391 @@
+X-Account-Key: account1
+X-UIDL: GmailId17dd9a0d6f6c6dd0
+X-Mozilla-Status: 0013
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: catskillmarina@gmail.com
+Received: by 2002:ad4:47b3:0:0:0:0:0 with SMTP id a19csp3558078qvz;
+        Mon, 20 Dec 2021 12:55:36 -0800 (PST)
+X-Received: by 2002:a05:6808:1707:: with SMTP id bc7mr707706oib.86.1640033736798;
+        Mon, 20 Dec 2021 12:55:36 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1640033736; cv=none;
+        d=google.com; s=arc-20160816;
+        b=f7Tq5eZdlFwdabaADK8K8podvCyDj+wTv2H4MYE+0fl1Svb388isYYilwqkd2pwBoX
+         kU/fEPxR0DkL9WcmUl94LlZ7FmXscRKANevxFA/cwWsiTntZGf5hASfcEOA4NZgMNQbf
+         XDv+yHCw0yBX6Bb2DKFte71xPxWmlyryXK/J5ohiWNiQwCgNNhKVbie3NuFEIyEBgc78
+         cHFr7m42SW56riu1NGuMIgoTIAYTILLYtTfO+6EdFtpIK0UrcmxszxNoIFMA+qO5nX3B
+         /CgHS2HrkGgTe/JBava0Yz8P3iG723b7gSre8pjs8Z3YAhmFEOnkONnbWIHzKi0uCDHY
+         fHGA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=R8SE33P6xrITYSZJg2Yd9O4htWweFiu1rIvNDOkpF08=;
+        b=tk69IzHOP0XWTkaNLS5nakXszmDTn33IgHKY2cJyI6YkXBRAoWEfI6aNJKcfdQ3jwt
+         GBR/5n5X91FXHjzpFD7aEx1l3fQ66BmYYnVIVLQbCPNW/gpAt7daMIljzmyCOnabfhYu
+         RyTtSqMuAJa+D7e1PzY0wGO6fT3Gy2TU+tjwmdtn4pL95BwOnyRM7e72DIZSird49RJj
+         rFCBZ+B8TwBNypWxZN2M4PHRZS3YfhHc2uZh5anWg6HUpghlFYwZIInSnRhdrFpyTV7F
+         bBtJEVTrlCTOe3XWj02DjUgYEFGuGMmcJU7A/PLbIDiMPCVzo0btfvD0eUIN0mZUZeaY
+         YTcA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ewsd.org header.s=google header.b=aKRyTCNx;
+       spf=pass (google.com: domain of bcobb@ewsd.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=bcobb@ewsd.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ewsd.org
+Return-Path: <bcobb@ewsd.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 45sor3153688otm.30.2021.12.20.12.55.36
+        for <catskillmarina@gmail.com>
+        (Google Transport Security);
+        Mon, 20 Dec 2021 12:55:36 -0800 (PST)
+Received-SPF: pass (google.com: domain of bcobb@ewsd.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ewsd.org header.s=google header.b=aKRyTCNx;
+       spf=pass (google.com: domain of bcobb@ewsd.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=bcobb@ewsd.org;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=ewsd.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=ewsd.org; s=google;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=R8SE33P6xrITYSZJg2Yd9O4htWweFiu1rIvNDOkpF08=;
+        b=aKRyTCNxvW4TUybKmumz2AbzYkSSxdT1wERPlxS6tgC1mP1xKYna3P+rrwKKpfcmPH
+         htSGJZjcFIKXFTpryk6hmzxKZwivIQHNX1Q/Be8tFCxkle4is4kzHpnHoKG3FiIgAsvr
+         jRxjKoqB2MY49kq+nu8l1pdkHCnprAgHBSdqIrcWCtCZDeHwMXeXXz58sXjBNL3lYp17
+         tEgZGLUGOA0GhYlUBc8qk+XxM8NegbEzqnIQyESs8IOCyjlTL0CASakKX5aJU/8vUued
+         tFo3bROvvishDRtulHL+U2RqFzonVQFN9UKzn3ZuvPHn19uIE5B2DN8E+BRJzgH74RwE
+         h9mg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=R8SE33P6xrITYSZJg2Yd9O4htWweFiu1rIvNDOkpF08=;
+        b=3JGLpbiJeiWoHbWBkQcXqdc3unAJCUr/xQWaH7wuRWL7Tbs1Cv1nsSJK3roV1en94Z
+         alNC2x0u8SyJiG8UNnKtOhxF9IRUgFTydhbW0LyjVV7BG7hAt+nmPcO/qlfjX5AYPuwD
+         0Kcled87RhnNdB88ukLSBETW3IgEtzrQO6DerxIZidfOP5rqxw4nWRfzHeqgCZenuvuO
+         7q8Cq5XpfnxYqgHzXjVPtkdX+FJWHrynCdzj/nLHLLPhl7ATXMf0a9ypgJAgGUZ5vChe
+         WzlANScNrjgC4GrzqSaCGTOnY/n8KdGAxQZRv6o+Jh40qsWR7dSc3/VBqdlVKVnFnJ56
+         8q5w==
+X-Gm-Message-State: AOAM532tZ8MEoyFwhXHoGInQQ5sUWH3gOmRYOad+AyiivNAA3mc/wEV5
+	ROEhmJgM5YFO1P9DO2Uo3KDySVLuVNiemSoswA/ShLyWU6/DvI6zW6QjSmThl/+Vtsm5ygbCwUN
+	51fyoX+dS7ekJjeU05pLwhh4X2ip8bIop3Tlv
+X-Google-Smtp-Source: ABdhPJxzv9/6ddTi/J6zVjARNbm8cRRFaM+h5uFq9hyC47N+ere0RVWi+a65mBqiB7UafJjdbH2t/BX20J1iCOBZXWA=
+X-Received: by 2002:a05:6830:1e77:: with SMTP id m23mr12927766otr.370.1640033736010;
+ Mon, 20 Dec 2021 12:55:36 -0800 (PST)
+MIME-Version: 1.0
+References: <CABjAEufjQjdk=PmErzhWxT_mwv2Obo6-vFUzwKMPSHqhwCR3MQ@mail.gmail.com>
+ <8e8fb8d3-913e-2a1f-97fb-72576fb87696@gmail.com>
+In-Reply-To: <8e8fb8d3-913e-2a1f-97fb-72576fb87696@gmail.com>
+From: Beth Cobb <bcobb@ewsd.org>
+Date: Mon, 20 Dec 2021 15:55:24 -0500
+Message-ID: <CABjAEudm0v1HfObAVN1ckFrMY+vgLKwjhBALRE2pzsfiogWUHg@mail.gmail.com>
+Subject: Re: Fwd: Public Records Request (VTLeaks)
+To: Marina Brown <catskillmarina@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000041495d05d39a1c5a"
+
+--00000000000041495d05d39a1c5a
+Content-Type: text/plain; charset="UTF-8"
+
+Marina,
+I have gathered documents for you.  I do not have any phone messages.  It
+is not something that our system stores and to my knowledge, there have
+been no phone messages regarding the removal of books.
+
+Here is a shared folder
+<https://drive.google.com/drive/u/0/folders/1cVHIPiLv2PolSx7T8TPyp3DrTb5NFJdV>
+with
+documents in it for your viewing.  I have emailed the advisors for their
+documents and will add additional materials if I receive anything.  I would
+like to make clear that there was not a book read within the LGBTQIA+
+Club.
+
+We have had one complaint from a community member and you will find the
+complaint email in the folder.  You will also find an email from the Essex
+Police Department.  We have not received any other complaints.
+
+I will let you know if I add any more documents.
+
+Beth
+
+On Mon, Dec 20, 2021 at 1:40 PM Marina Brown <catskillmarina@gmail.com>
+wrote:
+
+> On 12/20/21 9:23 AM, Beth Cobb wrote:
+> > Marina,
+> > As superintendent, I fulfill the public document requests.
+> > In order for me to complete your request, I need you to identify what you
+> > mean by records.  Do you want emails and documents?
+>
+> Yes, emails, memos, phone logs, notes and even recorded phone messages
+> complaining about books with LGBT* content. I am looking for any
+> complaint or book removal request or complaint about LGBT* books in
+> the time period between Sept 15 2021 and Dec 1 2021.
+>
+> Also, identify who you
+> > would like said records from.  Are you seeking documents from the
+> > principals?
+>
+> Principals, librarians and the faculty advisors of LGBT* groups.
+>
+>
+> By providing this information I will be able to identify
+> > the amount of work and time period.  Know that there may be a charge.
+> >
+> I was tipped off that someone called the police about a book that
+> was being read by a campus LBGT* group. That is the context of this
+> request.
+>
+> > Sincerely,
+> > Beth
+> >
+>
+> Thank you for your time and consideration. If phone messages are too
+> much of a hassle please exclude them for now.
+>
+> Sincerely,
+> Marina Brown
+>
+> > ---------- Forwarded message ---------
+> > From: Marina Brown <catskillmarina@gmail.com>
+> > Date: Mon, Dec 20, 2021, 4:47 AM
+> > Subject: Public Records Request (VTLeaks)
+> > To: <tparks@ewsd.org>, <dvannostrand@ewsd.org>
+> >
+> >
+> > Dear Essex HS Principles
+> >
+> > I am seeking any and all records from Sept 15 2021 to Dec 1 2021
+> > regarding calls to the Essex Police Department regarding or involving
+> > student LGBT* organizations and or books regarding the LGBT* community
+> > at Essex HS.
+> >
+> > I am also seeking records of any books challenged in that period by
+> > any person.
+> >
+> >
+> > Best Regards
+> >
+> > --
+> > Marina Brown
+> >
+>
+>
+> --
+> Marina Brown
+>
+>
+> h
+>
+
+
+-- 
+*Beth Cobb*
+*Superintendent*
+*Essex Westford School District*
+
+*District Office:  (802) 857-2002*
+*Cell:  (802)535-5300*
+*Pronouns: she, her, hers*
+*Follow me on Twitter:  @ewsdsupt*
+
+
+
+*Growing hearts and minds for a better today and tomorrow; every day, every
+way, every one.*
+
+
+
+
+
+
+CONFIDENTIAL COMMUNICATION. THIS MESSAGE MAY NOT BE FORWARDED.
+
+The information contained in this communication, including any
+attachments, is confidential,constitutes privileged communication, and
+is intended only for the use of the addressee. This message may not be
+forwarded without prior consent from  the sender. The information in
+this e-mail is also protected by the rights afforded under Family
+Educational Rights and Privacy Act (FERPA) and school district
+policies.  Any unauthorized use, forwarding, distribution,disclosure,
+printing or copying is strictly prohibited and may be unlawful.  If
+you have received this communication in error, please notify us
+immediately at 802-879-8192 or return e-mail,and delete any copies of
+this message immediately. Any inadvertent disclosure of this
+communication shall not compromise the confidential nature of the
+communication.
+
+-- 
+CONFIDENTIAL COMMUNICATION. THIS MESSAGE MAY NOT BE FORWARDED.
+
+The 
+information contained in this communication, including any attachments, is 
+confidential,constitutes privileged communication, and is intended only for 
+the use of the addressee. This message may not be forwarded without prior 
+consent from  the sender. The information in this e-mail is also protected 
+by the rights afforded under Family Educational Rights and Privacy Act 
+(FERPA) and school district policies.  Any unauthorized use, forwarding, 
+distribution,disclosure, printing or copying is strictly prohibited and may 
+be unlawful.  If you have received this communication in error, please 
+notify us immediately at 802-857-7777 or return e-mail,and delete any 
+copies of this message immediately. Any inadvertent disclosure of this 
+communication shall not compromise the confidential nature of the 
+communication.
+
+--00000000000041495d05d39a1c5a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Marina,<div>I have gathered documents for you.=C2=A0 I do =
+not have any phone messages.=C2=A0 It is not something that our system stor=
+es and to my knowledge, there have been no phone messages regarding the rem=
+oval of books.</div><div><br></div><div>Here is a <a href=3D"https://drive.=
+google.com/drive/u/0/folders/1cVHIPiLv2PolSx7T8TPyp3DrTb5NFJdV">shared fold=
+er</a>=C2=A0with documents in it for your viewing.=C2=A0 I have emailed the=
+ advisors for their documents and will add additional materials if I receiv=
+e anything.=C2=A0 I would like to make clear that there was not a book read=
+ within the LGBTQIA+ Club.=C2=A0=C2=A0</div><div><br></div><div>We have had=
+ one complaint from a community member and you will find the complaint emai=
+l in the folder.=C2=A0 You will also find an email from the Essex Police De=
+partment.=C2=A0 We have not received any other complaints.</div><div><br></=
+div><div>I will let you know if I add any more=C2=A0documents.</div><div><b=
+r></div><div>Beth</div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr=
+" class=3D"gmail_attr">On Mon, Dec 20, 2021 at 1:40 PM Marina Brown &lt;<a =
+href=3D"mailto:catskillmarina@gmail.com">catskillmarina@gmail.com</a>&gt; w=
+rote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0p=
+x 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">On 12/20/2=
+1 9:23 AM, Beth Cobb wrote:<br>
+&gt; Marina,<br>
+&gt; As superintendent, I fulfill the public document requests.<br>
+&gt; In order for me to complete your request, I need you to identify what =
+you<br>
+&gt; mean by records.=C2=A0 Do you want emails and documents? <br>
+<br>
+Yes, emails, memos, phone logs, notes and even recorded phone messages <br>
+complaining about books with LGBT* content. I am looking for any <br>
+complaint or book removal request or complaint about LGBT* books in<br>
+the time period between Sept 15 2021 and Dec 1 2021.<br>
+<br>
+Also, identify who you<br>
+&gt; would like said records from.=C2=A0 Are you seeking documents from the=
+<br>
+&gt; principals?<br>
+<br>
+Principals, librarians and the faculty advisors of LGBT* groups.<br>
+<br>
+<br>
+By providing this information I will be able to identify<br>
+&gt; the amount of work and time period.=C2=A0 Know that there may be a cha=
+rge.<br>
+&gt; <br>
+I was tipped off that someone called the police about a book that<br>
+was being read by a campus LBGT* group. That is the context of this<br>
+request.<br>
+<br>
+&gt; Sincerely,<br>
+&gt; Beth<br>
+&gt; <br>
+<br>
+Thank you for your time and consideration. If phone messages are too <br>
+much of a hassle please exclude them for now.<br>
+<br>
+Sincerely,<br>
+Marina Brown<br>
+<br>
+&gt; ---------- Forwarded message ---------<br>
+&gt; From: Marina Brown &lt;<a href=3D"mailto:catskillmarina@gmail.com" tar=
+get=3D"_blank">catskillmarina@gmail.com</a>&gt;<br>
+&gt; Date: Mon, Dec 20, 2021, 4:47 AM<br>
+&gt; Subject: Public Records Request (VTLeaks)<br>
+&gt; To: &lt;<a href=3D"mailto:tparks@ewsd.org" target=3D"_blank">tparks@ew=
+sd.org</a>&gt;, &lt;<a href=3D"mailto:dvannostrand@ewsd.org" target=3D"_bla=
+nk">dvannostrand@ewsd.org</a>&gt;<br>
+&gt; <br>
+&gt; <br>
+&gt; Dear Essex HS Principles<br>
+&gt; <br>
+&gt; I am seeking any and all records from Sept 15 2021 to Dec 1 2021<br>
+&gt; regarding calls to the Essex Police Department regarding or involving<=
+br>
+&gt; student LGBT* organizations and or books regarding the LGBT* community=
+<br>
+&gt; at Essex HS.<br>
+&gt; <br>
+&gt; I am also seeking records of any books challenged in that period by<br=
+>
+&gt; any person.<br>
+&gt; <br>
+&gt; <br>
+&gt; Best Regards<br>
+&gt; <br>
+&gt; --<br>
+&gt; Marina Brown<br>
+&gt; <br>
+<br>
+<br>
+-- <br>
+Marina Brown<br>
+<br>
+<br>
+h<br>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+ class=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div dir=
+=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"ltr"><div><div><div>=
+<font size=3D"1" face=3D"verdana, sans-serif" color=3D"#0b5394"><i>Beth Cob=
+b</i></font></div><div><font size=3D"1" face=3D"verdana, sans-serif" color=
+=3D"#0b5394"><i>Superintendent</i></font></div><div><font size=3D"1" face=
+=3D"verdana, sans-serif" color=3D"#0b5394"><i>Essex Westford School Distric=
+t</i></font></div><div><font size=3D"1" face=3D"verdana, sans-serif" color=
+=3D"#0b5394"><i>District Office: =C2=A0(802) 857-2002<br></i></font></div><=
+div><font size=3D"1" face=3D"verdana, sans-serif" color=3D"#0b5394"><i>Cell=
+: =C2=A0(802)535-5300</i></font></div><div><font face=3D"verdana, sans-seri=
+f" size=3D"1" color=3D"#0b5394"><i>Pronouns: she, her, hers</i></font><font=
+ size=3D"1" face=3D"verdana, sans-serif" color=3D"#0b5394"><i><br></i></fon=
+t></div><div><font size=3D"1" face=3D"verdana, sans-serif" color=3D"#0b5394=
+"><i>Follow me on Twitter: =C2=A0@ewsdsupt</i></font></div></div><div style=
+=3D"font-size:12.8px"><br></div><div style=3D"text-align:center;font-size:1=
+2.8px">=C2=A0<img src=3D"https://lh3.googleusercontent.com/OBdGCcjHoe810tQz=
+al5_LdQvq2AAMCz9n0VDfuo1-FcpoyyAbG79u3C9hE09x6rNak_vaYdiFXKyfAWfLlDRHynqmAW=
+hfvO5ykOjQmA7wrnZz6xgtd5-mom4_tl4wVM3Uv7mb1V5" width=3D"96" height=3D"73" s=
+tyle=3D"background-color: transparent; color: rgb(0, 0, 0); font-family: Ar=
+ial; font-size: 11pt; white-space: pre-wrap; border: none;"></div><div styl=
+e=3D"text-align:center"><b><span style=3D"background-color:transparent;vert=
+ical-align:baseline;white-space:pre-wrap"><font color=3D"#38761d" face=3D"v=
+erdana, sans-serif" size=3D"1"><i>Growing hearts and minds for a better tod=
+ay and tomorrow; every day, every way, every one.</i></font></span><font co=
+lor=3D"#0b5394" style=3D"font-size:12.8px"><br></font></b></div><div style=
+=3D"font-size:12.8px"><br></div><div><font color=3D"#0b5394"><br></font></d=
+iv><div style=3D"font-size:12.8px"><br></div><div style=3D"font-size:12.8px=
+"><br></div><div style=3D"font-size:12.8px">=C2=A0</div><blockquote style=
+=3D"font-size:12.8px;margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204=
+,204,204);padding-left:1ex"><pre style=3D"white-space:pre-wrap">CONFIDENTIA=
+L COMMUNICATION. THIS MESSAGE MAY NOT BE FORWARDED.
+
+The information contained in this communication, including any attachments,=
+ is confidential,constitutes privileged communication, and is intended only=
+ for the use of the addressee. This message may not be forwarded without pr=
+ior consent from  the sender. The information in this e-mail is also protec=
+ted by the rights afforded under Family Educational Rights and Privacy Act =
+(FERPA) and school district policies.  Any unauthorized use, forwarding, di=
+stribution,disclosure, printing or copying is strictly prohibited and may b=
+e unlawful.  If you have received this communication in error, please notif=
+y us immediately at <a value=3D"+18028798192">802-879-8192 </a>or return e-=
+mail,and delete any copies of this message immediately. Any inadvertent dis=
+closure of this communication shall not compromise the confidential nature =
+of the communication.</pre></blockquote></div><div style=3D"margin:2px 0px =
+0px;font-size:12.8px"></div></div></div></div></div></div></div></div></div=
+>
+
+<br>
+<pre style=3D"white-space:pre-wrap;color:rgb(34,34,34);background-color:rgb=
+(255,255,255)">CONFIDENTIAL COMMUNICATION. THIS MESSAGE MAY NOT BE FORWARDE=
+D.
+
+The information contained in this communication, including any attachments,=
+ is confidential,constitutes privileged communication, and is intended only=
+ for the use of the addressee. This message may not be forwarded without pr=
+ior consent from  the sender. The information in this e-mail is also protec=
+ted by the rights afforded under Family Educational Rights and Privacy Act =
+(FERPA) and school district policies.  Any unauthorized use, forwarding, di=
+stribution,disclosure, printing or copying is strictly prohibited and may b=
+e unlawful.  If you have received this communication in error, please notif=
+y us immediately at 802-857-7777<a value=3D"+18028798192"> </a>or return e-=
+mail,and delete any copies of this message immediately. Any inadvertent dis=
+closure of this communication shall not compromise the confidential nature =
+of the communication.</pre>
+--00000000000041495d05d39a1c5a--

@@ -1,0 +1,186 @@
+X-Account-Key: account1
+X-UIDL: GmailId17ddd88918fe082e
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: catskillmarina@gmail.com
+Received: by 2002:ad4:47b3:0:0:0:0:0 with SMTP id a19csp4256930qvz;
+        Tue, 21 Dec 2021 07:07:34 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJyNdFUZXcekiIM7PwC0G05tcIANNWofWueEgxdYsWFqAbXGTHCX+4BAlRbVO7x2I/Ki6+zG
+X-Received: by 2002:a17:907:1b01:: with SMTP id mp1mr3083843ejc.683.1640099254454;
+        Tue, 21 Dec 2021 07:07:34 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1640099254; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=Gow+sKPlC1AQ1dOIx+r2+fj/zD4FK5rPTo/U3fZDEHpBxHqJVdjvOl2fgp/sLJ+8Jg
+         KLkMzcUbYZCGRhvWDGS9MZWUt9c3ibSq4UHwaf8Q8RkDJHNpKraOOAjAN0bFzaJKFbyH
+         SC0jMglppevRQIBlbGQBeRP7zLglQDGCVCsfb+3TgmJuGILV+VN+SsThxY0Iezq/yD08
+         Ga2XmJakjVqyfI9U5HaZdrnjfMMs+1WlhKEmC2nFqF9J5vd7Ig4zLJANFvIKBSYKxhlv
+         +BJx14h1eWfv5GfR7UZIQM6tmYyaLwA1gK9zMtQ6TVFT+72mGA7ouSlnLcSKmFZbI924
+         /tgQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-transfer-encoding:content-language
+         :accept-language:in-reply-to:references:message-id:date:thread-index
+         :thread-topic:subject:to:from:dkim-signature;
+        bh=sNIztOwi2daAs7YmszZupDyzG8g+Snezi+T46dE+7kY=;
+        b=vSW7vnipMPHv9rlJbt0mCdRjywsrOG/iNsfS+hYiUHPbZ5BdoPVdC0A9dyxwGt96TH
+         3MIh+Av1sO/JK85Hvon9aoOaqT1LMz9OrbSltFs9MDaJWeqp6fxAU5+T0RLntcqADSnV
+         pJpgkvH2DlKMrhmpayFdY3bo2anDFzfLVy7DA0U9mDhHAWnIa6ZRufSfFhx2V9t5sxHO
+         lbIcuG8rdoFqg+FOkMFcOiDvtM2iRWnPfHaMTb6gZsEV34hQA8SYyGnJuBCx6wjF+DkJ
+         uy2E3czL62ZgHCpk4FVLpUrKG8HUKCSm5XwlELGJsGSfCbqUpn9UkpkMVK0WaVifrksz
+         kffA==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@vermont.gov header.s=selector2 header.b=k5omvcVi;
+       arc=pass (i=1 spf=pass spfdomain=vermont.gov dkim=pass dkdomain=vermont.gov dmarc=pass fromdomain=vermont.gov);
+       spf=pass (google.com: domain of jennifer.bouffard@vermont.gov designates 2a01:111:f400:7d05::731 as permitted sender) smtp.mailfrom=Jennifer.Bouffard@vermont.gov;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=vermont.gov
+Return-Path: <Jennifer.Bouffard@vermont.gov>
+Received: from GCC02-BL0-obe.outbound.protection.outlook.com (mail-bl0gcc02on20731.outbound.protection.outlook.com. [2a01:111:f400:7d05::731])
+        by mx.google.com with ESMTPS id f21si10487884ejh.859.2021.12.21.07.07.34
+        for <catskillmarina@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 21 Dec 2021 07:07:34 -0800 (PST)
+Received-SPF: pass (google.com: domain of jennifer.bouffard@vermont.gov designates 2a01:111:f400:7d05::731 as permitted sender) client-ip=2a01:111:f400:7d05::731;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@vermont.gov header.s=selector2 header.b=k5omvcVi;
+       arc=pass (i=1 spf=pass spfdomain=vermont.gov dkim=pass dkdomain=vermont.gov dmarc=pass fromdomain=vermont.gov);
+       spf=pass (google.com: domain of jennifer.bouffard@vermont.gov designates 2a01:111:f400:7d05::731 as permitted sender) smtp.mailfrom=Jennifer.Bouffard@vermont.gov;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=vermont.gov
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=D3D/kO0QTieBtU30jPtsObDOGLXCbWZO//12nztPPQM4iFD5NzqlhS2hrJaalR8fDGaQfnoj+Pwd/+fpOJd3IZ3a/xrXh55E48YqgKOG873wptZjpeF3vVyppvUZRpEencpjUVkcmMdk4hv3KhYRsaQDZrM5zNFcPwqLVTuNlzCP7E98ASISqMQSLDfyc3iMafvq6tw3pkfKQ2iN+0ysgq8mwWKzci2pbfAauDsJB55zMYR20StzSCL7VHEino25UuSIknGg+JTGvOu/0MPpB91PCh4AfDD+G9gl9O0DurHYqZ5mRK5gUFn6rjjT6zOwWnUyuQ4CVmqN6OBXeNXpEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=sNIztOwi2daAs7YmszZupDyzG8g+Snezi+T46dE+7kY=;
+ b=JtLwCRPE005on3fPIvopT5cYuHSOukd1WQt5fSpDhDBQ/IPEMyxbMD+y1jCFnrq6Bm6jQ1BiP+lLcerSxkcPU56H31JVulvwmV7UufYWd/3y9/oj3PVH2MimDUiHoQQxDyE/l5no9v0tj5uKKeeg9M5RIhc9KXno7UHnayHmokManYkiDP5A6nvvIj96Yx5WA+X7U3sVJBX/zO6HpjUNzzId2fdXrqnwQMFqTHLjyMcNmG1UACzm3Q+twJn2FKIZRm5skslqWmh5BBJJBws/VpatQxriFDT+tzp5H33QQ4xaQDdzJGTu3a5dwtfnPSC/Tw/ZDVAbtZs+ulINgGQ0lA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=vermont.gov; dmarc=pass action=none header.from=vermont.gov;
+ dkim=pass header.d=vermont.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=vermont.gov;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=sNIztOwi2daAs7YmszZupDyzG8g+Snezi+T46dE+7kY=;
+ b=k5omvcViE76W5jAGvs1utk8SFstLmCW/9/jrYaCK4bdtr1g80XCAlZzhMX7e364fAeVkf6Yhn8zVmtA3fnPp4v9l2J9sjLtKQJZlqDcBKujKue0c0EezJANgTziwZWuKeAQKZir4rEncmAlcmLQy67PAxINMGzBFsO1DSXy3gd0=
+Received: from MN2PR09MB4825.namprd09.prod.outlook.com (2603:10b6:208:21a::9)
+ by MN2PR09MB5097.namprd09.prod.outlook.com (2603:10b6:208:223::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4801.17; Tue, 21 Dec
+ 2021 15:07:32 +0000
+Received: from MN2PR09MB4825.namprd09.prod.outlook.com
+ ([fe80::4cfa:78ef:f2a:cf30]) by MN2PR09MB4825.namprd09.prod.outlook.com
+ ([fe80::4cfa:78ef:f2a:cf30%3]) with mapi id 15.20.4823.017; Tue, 21 Dec 2021
+ 15:07:32 +0000
+From: "Bouffard, Jennifer" <Jennifer.Bouffard@vermont.gov>
+To: Marina Brown <catskillmarina@gmail.com>
+Subject: RE: Public Records Request - VTLeaks
+Thread-Topic: Public Records Request - VTLeaks
+Thread-Index: AQHX9nVawZQVMwmu20WD84RsC+/Jsaw9C9Vg
+Date: Tue, 21 Dec 2021 15:07:32 +0000
+Message-ID:
+ <MN2PR09MB482538ED8B37414DF348E203E57C9@MN2PR09MB4825.namprd09.prod.outlook.com>
+References: <20ebdb31-aa6d-711e-3f9f-53ac3016ef61@gmail.com>
+In-Reply-To: <20ebdb31-aa6d-711e-3f9f-53ac3016ef61@gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=vermont.gov;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: be49b14d-d6dd-465f-6167-08d9c4939d43
+x-ms-traffictypediagnostic: MN2PR09MB5097:EE_
+x-microsoft-antispam-prvs:
+ <MN2PR09MB5097F0E1843849A4701ED2DEE57C9@MN2PR09MB5097.namprd09.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:8882;
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ Z6IeH5Wg8wcU6WzYYe3VAfMbxFqecY58nBRVV8rO4UGkuImWICzWcXQsr6136yydoEobO4l7yNTtMiECEnfwRYOE7yV2zLUc2IUHkcbNBziE3f0Q+83FoNiMAPTdZDM5BTGbqV2+4CYvUy93XA056dUQ4RC/QseJtXCFnlIQz/S/8CjWcka//mhSWCP8d2v6TbcAoXRNgUfHo5Dkxo/YgoIc6R59mLA+x7L/E1jtJ+h4ppGvU8QiRoiKMfqlcp7AwyaVcHlnC9Dp5E4BI7yiuPsH/UU+b/Q3517FF6Ndrc6Ot+ma1/daXyZKKNwTyODTeXqXS2TGFmE7TpSrIde7WTzqV5ebqxdedIydNx9jqGlpGXpPMOvFrCXQA/QwDf6urY/HlDHU/Fu+tyKFa8wzjFB3sAoeet+CdGTlpMDr8BTPHZpE84eYH6RMbDHnqJgSCWDT1lJzMecIwhpusdD8uOl21LwI99lyEvo6BEogx32UUR1Kk8/kPoHlVdtY1cJvKFKYo5RK1/OPqatLeo2o6uNC1dX1s/i+bDQxHKO4BS7fcNU4BlpkhNLbxvlDl6fKdr4+z9CnPUcglo7tuGyE5oyduAPJbMKir53JH4mPzV1CZyj4ZT8g6pwwn3mjadI8TNmacVw3UWQzv58gOXkLYPYJLLc5+SZDVWk9/nciK3e9zY8so8lz0NodvFKlHcZBAptt3cU0lFVzBvRTuSCnBA==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MN2PR09MB4825.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(4636009)(366004)(508600001)(6916009)(38100700002)(9686003)(66446008)(40140700001)(5660300002)(38070700005)(55016003)(83380400001)(33656002)(66556008)(8936002)(52536014)(71200400001)(76116006)(66476007)(186003)(64756008)(26005)(6506007)(53546011)(8676002)(316002)(2906002)(7696005)(66946007)(86362001)(122000001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?utf-8?B?YWlReGd1TVBSQWJIVXhJVmp2SEZibEszbEEyZlFaTlNMT1Z4RUxsMlh1aXBl?=
+ =?utf-8?B?eG84YXVMdjJYc2g4R1pDZFVlU0l2b2E0Rk4veHZtRVkzT1FwTm1xTWNYTUx6?=
+ =?utf-8?B?bkJCV0pURGpMaEkxb3hScWJFR0QyYkFKdWVVd2Flc2YxRWpVd01Ca05sRzdn?=
+ =?utf-8?B?NGhWWjZyQXRlZDU4Y05KUG5FMFVqQ2VDcFgyOEpxeDAxZGhjcEZOZUhyU2Z4?=
+ =?utf-8?B?NmkyclBCcTM5SWpiZGpjNWJXR3JGaEpWK0czV0p4czVueXhKMFVVSytzdWFE?=
+ =?utf-8?B?UjlMb25DVEs2Rjk0MzZ0OWZWTmY3TGpCVEhLQm4wOFJMaFcyS2JFOFIwZlZQ?=
+ =?utf-8?B?ZmNIeTZubXZnRyt4dGZwUGdUSWtuQk9WN09NK2ZZNkREQi9ubFc2VnZHUXdG?=
+ =?utf-8?B?RWxKWFlQZ3pFYU5aYTlISVI0dlFhYTZvSStMejhxVnRuSHBwOTF2VU1LRjJP?=
+ =?utf-8?B?SmplZVlOYi8wMFdrN0tKRlM3ZC9wdzM2dXRjSkI2ZkYyRUdsM3g0SHg2VXA0?=
+ =?utf-8?B?L3JEU1Y2Uzhkc3pqVkE1NW85OXZ3UnkwNXEwQkFRdG5xM3l5ZzdNQ0lHcTV1?=
+ =?utf-8?B?eHFPam14bTQ2L3Jyb2cvaHRjdEQrelBLc2VmYzNFaXFuNWsxdVFQTnBXRVgr?=
+ =?utf-8?B?bW4yYlJlY0V1SnFneGN4TUp6L0NzWjFKMm1sUUJqb0J4dlViSEJMeGhiY3Rj?=
+ =?utf-8?B?dVpIbWppWW01Rnk2R0hEU2Q1cmxDV3p5VjIySDFPZm5HdVk2LzkrQy8vOGxw?=
+ =?utf-8?B?bis1MFNYTDhERlpzZnVCMVBtWDZ2QkF0eDBMQjFkV0hzQlVlYzd1MC9PVDAx?=
+ =?utf-8?B?SzdHNDNtU1k3c3F3T3hobmhLTWs4WUg0V3FsZEg1cUdYL3RrQUhCaFBYL3hK?=
+ =?utf-8?B?Sm4veXVSbm52L01uV2NhM0RsenJEMVFxRXUwWnBGbU1wWEw3Z01YUGJidjc3?=
+ =?utf-8?B?RW1MSC95QVB4a0tzcUZjQkVRUmhKZGR3bHRiUUQ3SjVtRlpqUUordE9jbWEz?=
+ =?utf-8?B?MXEyRUF6K3RoUi80UklhT3l1bFVmQ3BWN1FnTFVaMTd3VW9FOStHS1dEYmdS?=
+ =?utf-8?B?OFBVRm0zNENJdTVKSFYwVUJSeEdzam1ZcTZORjMwQTFlUGVDUSsrQld4TDlB?=
+ =?utf-8?B?SCt4K1hzaFZJbDNKaG9GWGZXNjQ3cWdRVXo2VmtaZ1Y2MC81TENOcDA1QVE3?=
+ =?utf-8?B?WDZ5RUN3K0tQZTNsQUZpWWVEYTBPaDVBSWNVekVXSlRxUlA0Sk5FR25aSHJG?=
+ =?utf-8?B?OUZBZ2Q1QmkwZkd5M3FxaExLYUtHQUxZd0NCVisycTdBbzd2bzdaUjcvYmJ0?=
+ =?utf-8?B?Y1ZRTnZ5RW1WSXQ2ekpCblAxMlV5b2pzalJJNGxneUJza0xYNnBvY2ZYRTJO?=
+ =?utf-8?B?ejdrV0lFSnBad1lVZUZMSHQybFVMaHB2N0VpdVpWS0U0cHp0V0tJZWF0Vmxh?=
+ =?utf-8?B?V21xUnAvWWhSN01BY2F3aG1rMGl6SGUzUGZnZ3Y0WEFMTmZyc25sUm9rZkth?=
+ =?utf-8?B?WXhRODNKSlNiQmlvbStwMmFuNk0weEdwOFBFeC91c3B1c3JtODMzWkh0OE5l?=
+ =?utf-8?B?MzY3R0p1UkhZS0grbjlMRnZheWNQbG9NZWNEOW5ON1NpSHpiS3NDR1BxQ0tw?=
+ =?utf-8?B?Y2JyTWxzb01oL1E0Q0piMjh2b3lnNE9MU2hrcFphVjNHbWdNOGE1MVduVCtr?=
+ =?utf-8?B?UGkxcmhGdmtvT0hrU2lDSjFodDlRUFN0V3lXM0pMdHZ0UkFNME5LbmZBL0lX?=
+ =?utf-8?Q?fUXvn1z0t9gFoOMb7DSYiREWfLl+MWrtgSCKOPO?=
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-OriginatorOrg: vermont.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MN2PR09MB4825.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: be49b14d-d6dd-465f-6167-08d9c4939d43
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Dec 2021 15:07:32.6783
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 20b4933b-baad-433c-9c02-70edcc7559c6
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR09MB5097
+
+VGhhbmsgeW91IGZvciByZWFjaGluZyBvdXQuICBUaGlzIGVtYWlsIGlzIGNvbmZpcm1hdGlvbiB0
+aGF0IHlvdXIgcmVxdWVzdCBoYXMgYmVlbiByZWNlaXZlZC4gSXQgd2lsbCBiZSBwYXNzZWQgYWxv
+bmcgdG8gdGhlIHBhcnRpZXMgd2hvIGhhbmRsZSBQdWJsaWMgUmVjb3JkcyBSZXF1ZXN0cy4NCg0K
+VGhhbmsgeW91Lg0KDQpKZW5uaWZlcg0KDQpKZW5uaWZlciBKLiBCb3VmZmFyZCAoU2hlL0hlcikN
+CkFkbWluaXN0cmF0aXZlIENvb3JkaW5hdG9yDQpDaGl0dGVuZGVuIENvdW50eSBTdGF0ZeKAmXMg
+QXR0b3JuZXlzIE9mZmljZQ0KMzIgQ2hlcnJ5IFN0cmVldCwgU3VpdGUgMzA1DQpCdXJsaW5ndG9u
+LCBWVCAwNTQwMQ0KUDogIDgwMi04NjMtMjg2NQ0KRjogIDgwMi04NjMtNzQ0MA0KDQoNCg0KLS0t
+LS1PcmlnaW5hbCBNZXNzYWdlLS0tLS0NCkZyb206IE1hcmluYSBCcm93biA8Y2F0c2tpbGxtYXJp
+bmFAZ21haWwuY29tPiANClNlbnQ6IFR1ZXNkYXksIERlY2VtYmVyIDIxLCAyMDIxIDk6MTYgQU0N
+ClRvOiBTQVMgLSBDaGl0dGVuZGVuIFNlY3JldGFyaWVzIDxTQVMuQ2hpdHRlbmRlblNlY3JldGFy
+aWVzQHZlcm1vbnQuZ292Pg0KU3ViamVjdDogUHVibGljIFJlY29yZHMgUmVxdWVzdCAtIFZUTGVh
+a3MNCg0KRVhURVJOQUwgU0VOREVSOiBEbyBub3Qgb3BlbiBhdHRhY2htZW50cyBvciBjbGljayBv
+biBsaW5rcyB1bmxlc3MgeW91IHJlY29nbml6ZSBhbmQgdHJ1c3QgdGhlIHNlbmRlci4NCg0KRGVh
+ciBDaGl0dGVuZGVuIENvdW50eSBTdGF0ZXMgQXR0eToNCg0KVW5kZXIgdGhlIFZlcm1vbnQgUHVi
+bGljIFJlY29yZHMgTGF3LCDCpzMxNSBldCBzZXEuLCBJIGFtIHJlcXVlc3RpbmcgYW4gb3Bwb3J0
+dW5pdHkgdG8gaW5zcGVjdCBvciBvYnRhaW4gY29waWVzIG9mIHJlY29yZHMgcmVnYXJkaW5nIGNv
+bXBsYWludHMgb3IgZGlzY3Vzc2lvbiBvZiBjb21wbGFpbnRzIG9mIHRoZSBib29rICdHZW5kZXIg
+UXVlZXInIG9yIHRoZSBMR0JUUUlBKiBjbHViIGF0IEVzc2V4IEhpZ2ggU2Nob29sLg0KDQpTcGVj
+aWZpY2FsbHkgaSB3YXMgdGlwcGVkIG9mZiB0aGF0IHRoZSBwb2xpY2Ugd2VyZSBjYWxsZWQgcmVn
+YXJkaW5nIHRoaXMgYm9vayBhdCBFc3NleCBIaWdoIFNjaG9vbC4gSSBhbSByZXF1ZXN0aW5nIHJl
+Y29yZHMgcGVydGFpbmluZyB0byB0aGF0IGluY2lkZW50Lg0KDQpJZiB0aGVyZSBhcmUgYW55IGZl
+ZXMgZm9yIHNlYXJjaGluZyBvciBjb3B5aW5nIHRoZXNlIHJlY29yZHMsIHBsZWFzZSBpbmZvcm0g
+bWUgaWYgdGhlIGNvc3Qgd2lsbCBleGNlZWQgJDIwLiBIb3dldmVyLCBJIHdvdWxkIGFsc28gbGlr
+ZSB0byByZXF1ZXN0IGEgd2FpdmVyIG9mIGFsbCBmZWVzIGluIHRoYXQgdGhlIGRpc2Nsb3N1cmUg
+b2YgdGhlIHJlcXVlc3RlZCBpbmZvcm1hdGlvbiBpcyBpbiB0aGUgcHVibGljIGludGVyZXN0IGFu
+ZCB3aWxsIGNvbnRyaWJ1dGUgc2lnbmlmaWNhbnRseSB0byB0aGUgcHVibGlj4oCZcyB1bmRlcnN0
+YW5kaW5nIG9mIHRoZSB0aGUgY2hhbGxlbmdlcyBTY2hvb2xzIGFuZCBzY2hvb2wgbGlicmFyaWFu
+cyBmYWNlIHRvZGF5Lg0KDQpJIGFtIGEgY2l0aXplbiBqb3VybmFsaXN0IHdobyBpcyBnYXRoZXJp
+bmcgdGhpcyBpbmZvcm1hdGlvbiBpbiB0aGUgcHVibGljIGludGVyZXN0IFRoaXMgaW5mb3JtYXRp
+b24gaXMgbm90IGJlaW5nIHNvdWdodCBmb3IgY29tbWVyY2lhbCBwdXJwb3NlcyBob3dldmVyIGl0
+IG1heSBiZSBzaGFyZWQgd2l0aCBjb21tZXJjaWFsIG1lZGlhLg0KDQpUaGUgbGF3IHJlcXVpcmVz
+IGEgcmVzcG9uc2UgdG8gdGhpcyByZXF1ZXN0IHdpdGhpbiAyIGRheXMsIG9yIHdpdGhpbiAxMCBk
+YXlzIGZvciBleHRyYW9yZGluYXJ5IGNpcmN1bXN0YW5jZXMuIElmIHlvdSBleHBlY3QgYSBzaWdu
+aWZpY2FudCBkZWxheSBpbiBmdWxmaWxsaW5nIHRoaXMgcmVxdWVzdCwgcGxlYXNlIGNvbnRhY3Qg
+bWUgd2l0aCBpbmZvcm1hdGlvbiBhYm91dCB3aGVuIEkgbWlnaHQgZXhwZWN0IGNvcGllcyBvciB0
+aGUgYWJpbGl0eSB0byBpbnNwZWN0IHRoZSByZXF1ZXN0ZWQgcmVjb3Jkcy4gSWYgeW91IGRlbnkg
+YW55IG9yIGFsbCBvZiB0aGlzIHJlcXVlc3QsIHBsZWFzZSBjaXRlIGVhY2ggc3BlY2lmaWMgZXhl
+bXB0aW9uIHlvdSBmZWVsIGp1c3RpZmllcyB0aGUgcmVmdXNhbCB0byByZWxlYXNlIHRoZSBpbmZv
+cm1hdGlvbiBhbmQgbm90aWZ5IG1lIG9mIHRoZSBhcHBlYWwgcHJvY2VkdXJlcyBhdmFpbGFibGUg
+dG8gbWUgdW5kZXIgdGhlIGxhdy4gVGhhbmsgeW91IGZvciBjb25zaWRlcmluZyBteSByZXF1ZXN0
+Lg0KLS0NCg0KU2luY2VyZWx5DQpNYXJpbmEgQnJvd24NCg0KDQo=
