@@ -1,5 +1,5 @@
 name: VTleaks 
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 source:      ./
 destination: ../public_html
